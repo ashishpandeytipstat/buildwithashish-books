@@ -1,6 +1,6 @@
 # Build with Ashish: Books
 
-Static site for buildwithashish.com, served by GitHub Pages.
+Static site for buildwithashish.co.in, served by GitHub Pages.
 
 - `/` home with both books
 - `/agent-at-your-desk/` The Agent at Your Desk (₹499)
