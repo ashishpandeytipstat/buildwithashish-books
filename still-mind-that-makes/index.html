@@ -1,0 +1,551 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>The Still Mind That Makes, by Ashish</title>
+<meta name="description" content="Meditation, the body, creativity and AI, where ancient wisdom meets modern science. 129 pages, PDF + EPUB, English + Hindi.">
+<meta name="theme-color" content="#0E0E11">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<meta property="og:type" content="website">
+<meta property="og:title" content="The Still Mind That Makes, by Ashish">
+<meta property="og:description" content="Meditation, the body, creativity and AI, where ancient wisdom meets modern science. 129 pages, PDF + EPUB, English + Hindi.">
+<meta property="og:image" content="https://buildwithashish.com/still-mind-that-makes/media/cover.jpg">
+<meta property="og:url" content="https://buildwithashish.com/still-mind-that-makes/"><link rel="canonical" href="https://buildwithashish.com/still-mind-that-makes/">
+<meta name="twitter:card" content="summary_large_image">
+</head>
+<body>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&family=Poppins:wght@500;700&display=swap">
+<style>
+/* Layout: a single dusk-indigo world taken from the book's cover. Lotus gold for the book's voice, Build with Ashish orange only for buying. Hero = cover + title + Reel; then a live two-minute QUIET practice, the four arts, the research with evidence badges, real pages, the 30-day plan, checkout. */
+:root{
+  --dusk:#14122A; --dusk-2:#1C1938; --dusk-3:#25214A; --line:#34305C;
+  --fg:#F4F1EC; --muted:#A39FBF; --gold:#F2C46B; --orange:#FF8A3D;
+  --still:#6C72E8; --body:#3FB97A; --make:#F0923A; --ai:#2BB3B1;
+  --display:"Fraunces",Georgia,"Times New Roman",serif;
+  --text:"Inter",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
+  --mono:"JetBrains Mono",ui-monospace,Menlo,Consolas,monospace;
+  --hindi:"Poppins","Noto Sans Devanagari","Nirmala UI",sans-serif;
+  color-scheme:dark;
+}
+*{box-sizing:border-box}
+html{background:var(--dusk)}
+body{background:var(--dusk);color:var(--fg);font:400 16px/1.65 var(--text);-webkit-font-smoothing:antialiased}
+.wrap{max-width:1120px;margin:0 auto;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+a{color:var(--gold)}
+:focus-visible{outline:2px solid var(--gold);outline-offset:3px;border-radius:6px}
+h1,h2,h3{font-family:var(--display);font-weight:600;text-wrap:balance;margin:0;letter-spacing:-.01em}
+h2{font-size:clamp(30px,4.4vw,48px);line-height:1.08}
+h3{font-size:21px;line-height:1.25}
+p{margin:0}
+.label{font:500 12px/1.4 var(--mono);letter-spacing:.1em;text-transform:uppercase;color:var(--muted)}
+.g{color:var(--gold)}
+em.g{font-style:italic}
+section{padding-block:80px}
+.lead{color:var(--muted);max-width:56ch;margin-top:16px;font-size:17px}
+
+.draft{background:var(--dusk-2);border-bottom:1px solid var(--line)}
+.draft .wrap{display:flex;gap:10px;align-items:center;padding-block:10px;font:500 13px/1.4 var(--mono);color:var(--gold)}
+.draft .dot{width:8px;height:8px;border-radius:50%;background:var(--gold);flex:none}
+
+.top .wrap{display:flex;justify-content:space-between;align-items:center;gap:16px;padding-block:22px}
+.brand{display:flex;align-items:center;gap:10px;text-decoration:none;color:var(--fg);font:700 17px/1 var(--text);letter-spacing:-.03em}
+.brand svg{width:28px;height:28px;flex:none}
+.brand .o{color:var(--orange)}
+.top nav{display:flex;gap:22px;font-size:14px}
+.top nav a{color:var(--muted);text-decoration:none}
+.top nav a:hover{color:var(--fg)}
+
+/* hero */
+.hero{position:relative;overflow:hidden;padding-block:16px 80px}
+.hero::before{content:"";position:absolute;inset:-20% -10% auto auto;width:720px;height:720px;border-radius:50%;background:radial-gradient(closest-side,rgba(242,196,107,.16),rgba(242,196,107,0));pointer-events:none}
+.hero .wrap{position:relative;display:grid;grid-template-columns:minmax(0,1.2fr) minmax(0,.8fr);gap:56px;align-items:center}
+.hero h1{font-size:clamp(48px,7.6vw,96px);line-height:.98;margin-top:18px;font-weight:600}
+.hero h1 span{display:block;color:var(--gold);font-style:italic;font-weight:400}
+.sub{margin-top:20px;font-size:19px;line-height:1.5;max-width:38ch}
+.hook{margin-top:24px;color:var(--muted);max-width:54ch;font-size:16px}
+.hook b{color:var(--fg);font-weight:600}
+.arts-dots{display:flex;gap:8px;align-items:center;margin-top:22px;font:500 12px/1 var(--mono);color:var(--muted);letter-spacing:.08em;text-transform:uppercase;flex-wrap:wrap}
+.arts-dots i{width:10px;height:10px;border-radius:50%;display:inline-block}
+.facts{display:flex;flex-wrap:wrap;gap:10px;margin-top:24px}
+.facts span{font:500 13px/1 var(--mono);padding:9px 12px;border:1px solid var(--line);border-radius:999px}
+.buyrow{display:flex;flex-wrap:wrap;align-items:center;gap:18px 22px;margin-top:30px}
+.btn{appearance:none;border:0;cursor:pointer;background:var(--orange);color:#1f0e03;font:700 17px/1 var(--text);padding:18px 26px;border-radius:12px;display:inline-flex;align-items:center;gap:10px;transition:transform .15s ease,background .15s ease}
+.btn:hover{background:#ff9d5a;transform:translateY(-1px)}
+.price{display:flex;flex-direction:column;gap:3px}
+.price strong{font:600 32px/1 var(--display);font-variant-numeric:tabular-nums}
+.price small{font:500 12px/1.4 var(--mono);color:var(--muted)}
+.notice{margin-top:14px;font:500 13px/1.5 var(--mono);color:var(--gold);min-height:1.5em}
+
+.phone-col{display:flex;flex-direction:column;align-items:center;gap:14px}
+.phone{width:min(310px,100%);aspect-ratio:9/16;border-radius:34px;padding:10px;background:#09081a;border:1px solid var(--line);box-shadow:0 40px 90px -30px rgba(108,114,232,.45),0 0 0 6px #191634}
+.phone video{width:100%;height:100%;object-fit:cover;border-radius:25px;display:block;background:var(--dusk-2)}
+.lang{display:inline-flex;border:1px solid var(--line);border-radius:999px;padding:3px;background:var(--dusk-2)}
+.lang button,.sound{appearance:none;cursor:pointer;font:600 13px/1 var(--text);padding:9px 16px;border-radius:999px}
+.lang button{border:0;background:transparent;color:var(--muted)}
+.lang button[aria-pressed="true"]{background:var(--fg);color:var(--dusk)}
+.lang button.hi{font-family:var(--hindi)}
+.sound{background:transparent;color:var(--fg);border:1px solid var(--line)}
+.sound[aria-pressed="true"]{border-color:var(--gold);color:var(--gold)}
+.ctrls{display:flex;gap:10px;flex-wrap:wrap;justify-content:center}
+.vcap{font:500 12px/1.45 var(--mono);color:var(--muted);text-align:center;max-width:300px}
+
+/* puzzle */
+.puzzle{border-block:1px solid var(--line);background:var(--dusk-2)}
+.puzzle .wrap{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:48px;align-items:center}
+.puzzle blockquote{margin:0;font:400 italic clamp(26px,3.4vw,38px)/1.25 var(--display);text-wrap:balance}
+.places{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:10px;margin-top:26px}
+.places div{border:1px solid var(--line);border-radius:12px;padding:14px 12px;font-size:14px;color:var(--muted)}
+.places b{display:block;color:var(--fg);font-weight:600;font-size:15px}
+
+/* QUIET practice */
+.quiet .wrap{display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);gap:56px;align-items:center}
+.qcard{background:linear-gradient(180deg,#221E47,#1A1736);border:1px solid var(--line);border-radius:22px;padding:clamp(20px,4vw,34px)}
+.letters{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:8px}
+.letters button{appearance:none;border:1px solid var(--line);background:var(--dusk);color:var(--muted);border-radius:14px;padding:16px 4px 12px;cursor:pointer;display:flex;flex-direction:column;align-items:center;gap:6px;transition:border-color .2s,background .2s,color .2s;font:inherit}
+.letters b{font:600 clamp(28px,4vw,40px)/1 var(--display);color:var(--c)}
+.letters span{font:500 11px/1.25 var(--mono);text-align:center}
+.letters button[aria-current="step"]{border-color:var(--c);background:color-mix(in srgb,var(--c) 18%,var(--dusk));color:var(--fg)}
+.qstep{margin-top:22px;min-height:118px}
+.qstep h3{font-size:24px}
+.qstep p{color:var(--muted);margin-top:8px;max-width:52ch}
+.qbar{height:6px;border-radius:99px;background:var(--dusk);overflow:hidden;margin-top:18px}
+.qbar i{display:block;height:100%;width:0;background:var(--gold);transition:width .25s linear}
+.qrow{display:flex;justify-content:space-between;align-items:center;gap:12px;margin-top:16px;flex-wrap:wrap}
+.qrow .label{font-variant-numeric:tabular-nums}
+.ghost{appearance:none;cursor:pointer;background:var(--gold);color:#241a05;border:0;border-radius:10px;font:700 15px/1 var(--text);padding:13px 18px}
+.ghost.alt{background:transparent;color:var(--fg);border:1px solid var(--line)}
+
+/* four arts */
+.arts{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:16px;margin-top:40px}
+.art{border:1px solid var(--line);border-top:3px solid var(--c);border-radius:16px;padding:22px 20px;background:var(--dusk-2);display:flex;flex-direction:column;gap:8px}
+.art .label{color:var(--c)}
+.art p{color:var(--muted);font-size:15px}
+.artnote{margin-top:18px;color:var(--muted);font-size:15px}
+
+/* research */
+.research{background:var(--dusk-2);border-block:1px solid var(--line)}
+.finds{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px;margin-top:40px}
+.find{background:var(--dusk);border:1px solid var(--line);border-radius:18px;padding:24px;display:grid;grid-template-columns:auto minmax(0,1fr);gap:6px 20px;align-items:start}
+.find .big{font:600 clamp(40px,5vw,56px)/1 var(--display);color:var(--gold);font-variant-numeric:tabular-nums;grid-row:span 3}
+.find p{color:var(--muted);font-size:15px}
+.find cite{font:500 12px/1.4 var(--mono);color:var(--muted);font-style:normal}
+.badge{display:inline-flex;align-items:center;gap:6px;font:600 11px/1 var(--mono);letter-spacing:.06em;padding:5px 8px;border-radius:6px;width:max-content}
+.bA{background:rgba(63,185,122,.16);color:#6fd6a0}
+.bB{background:rgba(108,114,232,.2);color:#a9adff}
+.bC{background:rgba(240,146,58,.18);color:#ffb46e}
+.bT{background:rgba(242,196,107,.16);color:var(--gold)}
+.ladder{display:flex;flex-wrap:wrap;gap:10px 18px;margin-top:26px;color:var(--muted);font-size:14px;align-items:center}
+
+/* pages */
+.pages{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px;margin-top:40px}
+.page{margin:0;background:var(--dusk-2);border:1px solid var(--line);border-radius:18px;overflow:hidden;display:flex;flex-direction:column}
+.page .im{background:#FBF7EF;padding:14px}
+.page img{display:block;width:100%;height:auto;border-radius:6px}
+.page figcaption{padding:16px 20px 20px;color:var(--muted);font-size:15px}
+.page figcaption b{display:block;color:var(--fg);font:600 18px/1.3 var(--display);margin-bottom:4px}
+
+/* contents */
+.toc .wrap{display:grid;grid-template-columns:minmax(0,.7fr) minmax(0,1.3fr);gap:56px;align-items:center}
+.cover{margin:0;max-width:340px;justify-self:center;transform:rotate(-2deg);border-radius:6px;overflow:hidden;box-shadow:0 30px 70px -20px rgba(0,0,0,.75),0 0 0 1px var(--line)}
+.cover img{display:block;width:100%;height:auto}
+.parts{list-style:none;padding:0;margin:24px 0 0}
+.parts li{display:grid;grid-template-columns:80px minmax(0,1fr);gap:14px;border-top:1px solid var(--line);padding-block:14px}
+.parts li .label{color:var(--c,var(--gold));padding-top:4px}
+.parts h3{font-size:19px}
+.parts p{color:var(--muted);font-size:15px;margin-top:3px}
+.back{margin-top:10px}
+
+/* plan */
+.plan .wrap{display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);gap:56px;align-items:start}
+.weeks{display:grid;gap:0;margin-top:26px}
+.week{display:grid;grid-template-columns:96px minmax(0,1fr);gap:14px;border-top:1px solid var(--line);padding-block:14px}
+.week .label{color:var(--c)}
+.week p small{display:block;color:var(--muted);font-size:14px;margin-top:2px}
+.cal{display:grid;grid-template-columns:repeat(7,minmax(0,1fr));gap:8px}
+.cal div{aspect-ratio:1;border-radius:10px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:4px;font:500 13px/1 var(--mono);font-variant-numeric:tabular-nums;border:1px solid color-mix(in srgb,var(--c) 45%,transparent);background:color-mix(in srgb,var(--c) 16%,var(--dusk))}
+.cal div span{display:flex;gap:2px}
+.cal div span i{width:4px;height:4px;border-radius:50%;background:var(--fg);opacity:.7}
+.cal .rev{background:var(--c);color:#120f24;border-color:var(--c);font-weight:700}
+.cal .rev span i{background:#120f24}
+.minday{margin-top:22px;background:var(--dusk-2);border:1px solid var(--line);border-radius:16px;padding:18px 20px}
+.minday table{width:100%;border-collapse:collapse;margin-top:8px;font-size:15px}
+.minday td{padding:6px 0;border-top:1px solid var(--line);color:var(--muted);vertical-align:top}
+.minday td:first-child{font:600 18px/1.3 var(--display);color:var(--gold);width:36px}
+
+/* stories */
+.stories{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px;margin-top:36px}
+.story{border-top:2px solid var(--c);padding-top:16px;display:flex;flex-direction:column;gap:8px}
+.story p{color:var(--muted);font-size:15px}
+.storynote{margin-top:18px;font:500 12px/1.5 var(--mono);color:var(--muted)}
+
+/* get + checkout */
+.get{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:28px 32px;margin-top:36px}
+.get div{display:flex;flex-direction:column;gap:6px}
+.get h3{font-size:19px}
+.get p{color:var(--muted);font-size:15px}
+.checkout .box{background:linear-gradient(160deg,#25214A,#1A1736);border:1px solid var(--line);border-radius:24px;padding:clamp(24px,5vw,48px);display:grid;grid-template-columns:minmax(0,1.2fr) minmax(0,.8fr);gap:40px;align-items:center}
+.checkout ul{list-style:none;padding:0;margin:22px 0 0;display:grid;gap:10px}
+.checkout li{display:flex;gap:10px;align-items:flex-start}
+.checkout li::before{content:"";flex:none;width:8px;height:8px;margin-top:9px;border-radius:50%;background:var(--gold)}
+.bill{background:var(--dusk);border:1px solid var(--line);border-radius:16px;padding:22px}
+.bill table{width:100%;border-collapse:collapse;font-variant-numeric:tabular-nums}
+.bill td{padding:8px 0;color:var(--muted);font-size:15px}
+.bill td:last-child{text-align:right;color:var(--fg)}
+.bill tr.total td{border-top:1px solid var(--line);padding-top:14px;font:600 24px/1 var(--display);color:var(--fg)}
+.bill .btn{width:100%;justify-content:center;margin-top:18px}
+.bill .fine{margin-top:12px;font:500 12px/1.5 var(--mono);color:var(--muted)}
+.bundle{margin-top:14px;border-top:1px dashed var(--line);padding-top:14px;font-size:14px;color:var(--muted)}
+
+.faq{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:0 28px;margin-top:28px}
+details{border-top:1px solid var(--line);padding-block:16px}
+summary{cursor:pointer;font-weight:600;list-style:none;display:flex;justify-content:space-between;gap:16px}
+summary::-webkit-details-marker{display:none}
+summary::after{content:"+";color:var(--gold);font:500 20px/1 var(--mono)}
+details[open] summary::after{content:"−"}
+details p{color:var(--muted);margin-top:10px}
+.safety{margin-top:28px;border:1px solid var(--line);border-radius:14px;padding:16px 18px;color:var(--muted);font-size:14px;background:var(--dusk-2)}
+.safety b{color:var(--fg)}
+footer{border-top:1px solid var(--line)}
+footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:16px;padding-block:28px 40px;color:var(--muted);font:500 13px/1.5 var(--mono)}
+
+@media (max-width:900px){
+  .hero .wrap,.plan .wrap,.checkout .box,.quiet .wrap,.puzzle .wrap,.toc .wrap{grid-template-columns:minmax(0,1fr)}
+  .arts{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .get,.stories{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .cover{max-width:240px}
+}
+@media (max-width:640px){
+  section{padding-block:56px}
+  .top nav{display:none}
+  .finds,.pages,.faq,.get,.stories,.arts{grid-template-columns:minmax(0,1fr)}
+  .places{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .letters span{font-size:9.5px}
+  .week,.parts li{grid-template-columns:minmax(0,1fr);gap:2px}
+  .find{grid-template-columns:minmax(0,1fr)}
+  .find .big{grid-row:auto}
+  .sub{font-size:17px}
+}
+@media (prefers-reduced-motion:reduce){*{transition:none!important}}
+.also{padding-block:24px 56px}
+.also-card{display:grid;grid-template-columns:120px minmax(0,1fr);gap:24px;align-items:center;max-width:720px;text-decoration:none;color:inherit;border:1px solid rgba(255,255,255,.12);border-radius:16px;padding:18px;transition:border-color .15s}
+.also-card:hover{border-color:currentColor}
+.also-card img{width:100%;height:auto;border-radius:6px;display:block}
+.also-label{font:500 12px/1.4 ui-monospace,Menlo,monospace;letter-spacing:.08em;text-transform:uppercase;opacity:.65;margin:0}
+.also-title{margin:6px 0 4px;font-size:22px}
+.also-sub{opacity:.75;margin:0 0 10px}
+.also-go{font-weight:600}
+@media (max-width:480px){.also-card{grid-template-columns:84px minmax(0,1fr);gap:14px}}
+</style>
+
+<div class="draft" role="note"><div class="wrap"><span class="dot"></span><span>Preview. Checkout opens soon.</span></div></div>
+
+<header class="top"><div class="wrap">
+  <a class="brand" href="#top" aria-label="Build with Ashish">
+    <svg viewBox="0 0 1000 1000" aria-hidden="true"><rect x="150" y="530" width="340" height="250" rx="18" fill="#F4F1EC"/><rect x="510" y="530" width="340" height="250" rx="18" fill="#F4F1EC"/><rect x="330" y="260" width="340" height="250" rx="18" fill="#FF8A3D"/></svg>
+    <span>Build with <span class="o">Ashish</span></span>
+  </a>
+  <nav aria-label="Sections"><a href="#practice">Try QUIET</a><a href="#research">Research</a><a href="#contents">Contents</a><a href="#plan">30-day plan</a><a href="#buy">Buy</a><a href="#faq">FAQ</a></nav>
+</div></header>
+
+<main id="top">
+<section class="hero"><div class="wrap">
+  <div>
+    <p class="label">A new book by Ashish · First edition, November 2026</p>
+    <h1>The Still Mind <span>That Makes</span></h1>
+    <p class="sub">Meditation, the body, creativity and AI, where ancient wisdom meets modern science.</p>
+    <p class="hook">Your best ideas rarely come when you try hardest. They come in the shower, on a walk, in the minute before sleep. <b>This book explains why, and builds a daily practice around it:</b> a settled mind, a rested body, a habit of making, and AI that multiplies what the other three give it.</p>
+    <div class="arts-dots" aria-label="The four arts"><i style="background:var(--still)"></i>Mind <i style="background:var(--body)"></i>Body <i style="background:var(--make)"></i>Creativity <i style="background:var(--ai)"></i>AI</div>
+    <div class="facts"><span>129 pages · PDF + EPUB</span><span>English + हिंदी</span><span>6 parts · 18 chapters</span><span>35 figures</span><span>30-day plan</span><span>Prompt library</span></div>
+    <div class="buyrow">
+      <button class="btn" type="button" data-buy>Get the book <span aria-hidden="true">→</span></button>
+      <div class="price"><strong data-price>₹399</strong><small>incl. 18% GST · instant download</small></div>
+    </div>
+    <p class="notice" data-notice aria-live="polite"></p>
+  </div>
+  <div class="phone-col">
+    <div class="phone"><video id="reel" muted autoplay loop playsinline preload="metadata" poster="media/poster_en.jpg" aria-label="Build with Ashish Reel about The Still Mind That Makes"><source src="media/reel_en.mp4" type="video/mp4"></video></div>
+    <div class="ctrls">
+      <div class="lang" role="group" aria-label="Reel language">
+        <button type="button" id="lang-en" aria-pressed="true" data-lang="en">English</button>
+        <button type="button" id="lang-hi" class="hi" aria-pressed="false" data-lang="hi">हिंदी</button>
+      </div>
+      <button type="button" class="sound" id="sound" aria-pressed="false">Sound on</button>
+    </div>
+    <p class="vcap">The Build with Ashish Reel, narrated in Ashish's AI-cloned voice. Figures from the book.</p>
+  </div>
+</div></section>
+
+<section class="puzzle"><div class="wrap">
+  <div>
+    <p class="label">Chapter 1 opens with a puzzle</p>
+    <blockquote style="margin-top:14px">“If ideas came from effort alone, they would arrive at the desk, under pressure, on deadline.”</blockquote>
+  </div>
+  <div>
+    <p class="lead" style="margin-top:0">Instead they slip in through a side door. A good idea needs four things at once, and the book gives each its own part.</p>
+    <div class="places">
+      <div><b>A quiet mind</b>not too noisy</div>
+      <div><b>A rested body</b>not too tired</div>
+      <div><b>Material</b>to recombine</div>
+      <div><b>A way to build</b>and catch it</div>
+    </div>
+  </div>
+</div></section>
+
+<section class="quiet" id="practice"><div class="wrap">
+  <div>
+    <p class="label">Try it now · 2 minutes</p>
+    <h2 style="margin-top:12px">One word to carry: <span class="g">QUIET</span></h2>
+    <p class="lead">The book compresses its seven-stage daily loop into five letters you can run before a big decision, a creative project or a long AI session. This is the two-minute version from Chapter 1. Press Start and follow along.</p>
+  </div>
+  <div class="qcard">
+    <div class="letters" role="list">
+      <button type="button" role="listitem" style="--c:#C36BD6" data-i="0"><b>Q</b><span>Question<br>the why</span></button>
+      <button type="button" role="listitem" style="--c:var(--still)" data-i="1"><b>U</b><span>Unwind<br>into stillness</span></button>
+      <button type="button" role="listitem" style="--c:var(--body)" data-i="2"><b>I</b><span>Inhabit<br>the body</span></button>
+      <button type="button" role="listitem" style="--c:var(--make)" data-i="3"><b>E</b><span>Explore<br>divergently</span></button>
+      <button type="button" role="listitem" style="--c:var(--ai)" data-i="4"><b>T</b><span>Team up<br>with AI</span></button>
+    </div>
+    <div class="qstep" aria-live="polite"><h3 id="qh">Sit comfortably.</h3><p id="qp">Five steps of about 24 seconds each. Read the prompt, then close your eyes if you like.</p></div>
+    <div class="qbar"><i id="qbar"></i></div>
+    <div class="qrow"><span class="label" id="qtime">2:00</span><span style="display:flex;gap:8px"><button type="button" class="ghost alt" id="qreset">Reset</button><button type="button" class="ghost" id="qgo">Start</button></span></div>
+  </div>
+</div></section>
+
+<section id="arts"><div class="wrap">
+  <p class="label">Part I · The four arts</p>
+  <h2 style="margin-top:12px">Four arts, <em class="g">one practice</em></h2>
+  <p class="lead">Most books keep these on four different shelves. This one argues they lean on each other, so improving any one makes the others easier.</p>
+  <div class="arts">
+    <div class="art" style="--c:var(--still)"><span class="label">Part II</span><h3>The still mind</h3><p>Settle your attention, watch thoughts without being dragged by them, come back to calm. Three families of meditation and ten teachers, each in their own words.</p></div>
+    <div class="art" style="--c:var(--body)"><span class="label">Part III</span><h3>The living body</h3><p>Breath, movement, food, sleep and rhythm. Four breathing practices, a movement menu, and simple anchors for sleep and meals.</p></div>
+    <div class="art" style="--c:var(--make)"><span class="label">Part IV</span><h3>The creative mind</h3><p>Diverge and converge on purpose, use walks and sleep to incubate, and keep a daily 20-minute making practice.</p></div>
+    <div class="art" style="--c:var(--ai)"><span class="label">Part V</span><h3>The amplified mind</h3><p>AI as a thinking partner. The jagged frontier, how to brief it like a colleague, and the creative sandwich: you, AI, you.</p></div>
+  </div>
+  <p class="artnote">AI comes last on purpose. A scattered person with AI produces more scattered work, faster.</p>
+</div></section>
+
+<section class="research" id="research"><div class="wrap">
+  <p class="label">Two ways of knowing</p>
+  <h2 style="margin-top:12px">The traditions speak <em class="g">and the data speaks</em></h2>
+  <p class="lead">Every claim about health or performance carries an evidence badge, and every quotation names its source. When something hasn't been tested, the book says so. Four findings from inside:</p>
+  <div class="finds">
+    <div class="find"><span class="big">46.9%</span><span class="badge bB">B · MODERATE</span><p>of waking moments, people were thinking about something other than what they were doing, and they were less happy when their minds wandered.</p><cite>Killingsworth &amp; Gilbert, Science, 2010 · 2,250 adults</cite></div>
+    <div class="find"><span class="big">59%</span><span class="badge bB">B · MODERATE</span><p>found a hidden shortcut in a number puzzle after a night of sleep, against about 23% of those who stayed awake for the same time.</p><cite>Wagner et al., Nature, 2004</cite></div>
+    <div class="find"><span class="big">40%</span><span class="badge bB">B · MODERATE</span><p>faster on realistic writing tasks for professionals given ChatGPT, with independent graders rating the work about 18% higher.</p><cite>Noy &amp; Zhang, Science, 2023 · 453 professionals</cite></div>
+    <div class="find"><span class="big">More alike</span><span class="badge bB">B · MODERATE</span><p>Stories written with AI ideas were rated more novel and useful, yet became more similar to each other. Every writer gained; the group lost variety.</p><cite>Doshi &amp; Hauser, Science Advances, 2024</cite></div>
+  </div>
+  <div class="ladder"><span class="label">The evidence ladder</span><span class="badge bA">A · STRONG</span><span class="badge bB">B · MODERATE</span><span class="badge bC">C · EARLY</span><span class="badge bT">T · TRADITION</span><span>T means “not yet well tested”, which is not the same as false.</span></div>
+</div></section>
+
+<section id="inside"><div class="wrap">
+  <p class="label">Real pages from the book</p>
+  <h2 style="margin-top:12px">Every chapter is built <em class="g">around a picture</em></h2>
+  <div class="pages">
+    <figure class="page"><div class="im"><img src="media/fig1.jpg" alt="Figure 1: the four arts as one system, with still mind, living body and creative mind holding up the amplified mind" width="1000" height="590" loading="lazy"></div><figcaption><b>Figure 1 · Four arts, one practice</b>Each pillar supports the others, and the AI pillar is only as strong as the three beneath it.</figcaption></figure>
+    <figure class="page"><div class="im"><img src="media/fig22.jpg" alt="Figure 22: three findings about incubation, an easy task break, walking versus sitting, and a night's sleep with 59 percent versus 23 percent" width="1000" height="527" loading="lazy"></div><figcaption><b>Figure 22 · How ideas incubate</b>An easy task break, a walk and a night's sleep, side by side. Strong hints, the book says, rather than laws.</figcaption></figure>
+    <figure class="page"><div class="im"><img src="media/fig29.jpg" alt="Figure 29: two scatter plots of stories, without AI ideas spread out, with AI ideas higher but closer together" width="1000" height="552" loading="lazy"></div><figcaption><b>Figure 29 · The gain and the cost</b>With AI ideas, stories move up and closer together. The fix is the creative sandwich: your ideas first, AI in the middle, your judgement last.</figcaption></figure>
+    <figure class="page"><div class="im"><img src="media/fig6.jpg" alt="Figure 6: a donut chart showing 46.9 percent of moments spent thinking about something else" width="1000" height="486" loading="lazy"></div><figcaption><b>Figure 6 · The wandering mind</b>About half of waking life is spent somewhere else. Chapter 3 shows how the stress loop works and how noticing breaks it.</figcaption></figure>
+  </div>
+</div></section>
+
+<section class="toc" id="contents"><div class="wrap">
+  <figure class="cover"><img src="media/cover.jpg" alt="Cover of The Still Mind That Makes by Ashish: a glowing lotus on deep indigo, with the words Mind, Body, Creativity, AI" width="800" height="1142"></figure>
+  <div>
+    <p class="label">Contents</p>
+    <h2 style="margin-top:12px">Six parts, <em class="g">one daily loop</em></h2>
+    <ol class="parts">
+      <li style="--c:#C36BD6"><span class="label">Part I</span><div><h3>The Question</h3><p>The four arts · Two ways of knowing</p></div></li>
+      <li style="--c:var(--still)"><span class="label">Part II</span><div><h3>The Still Mind</h3><p>The restless mind · Three families of meditation · Teachers of stillness · Your first practice</p></div></li>
+      <li style="--c:var(--body)"><span class="label">Part III</span><div><h3>The Living Body</h3><p>Breath, the bridge · The moving body · Food, sleep and rhythm</p></div></li>
+      <li style="--c:var(--make)"><span class="label">Part IV</span><div><h3>The Creative Mind</h3><p>How ideas are born · Beginner's mind and the why · Making from scratch</p></div></li>
+      <li style="--c:var(--ai)"><span class="label">Part V</span><div><h3>The Amplified Mind</h3><p>AI as a thinking partner · Diverge with AI, converge yourself · AI for practice, health and building</p></div></li>
+      <li style="--c:#D9734E"><span class="label">Part VI</span><div><h3>The Integrated Life</h3><p>A day built on QUIET · The 30-day plan · Three stories</p></div></li>
+    </ol>
+    <p class="back label">Plus: afterword · answers · glossary · cheat sheet · prompt library · sources</p>
+    <p class="lead" style="font-size:15px">Teachers include Patanjali, the Buddha, the Bhagavad Gita, the Ashtavakra Gita, Ramana Maharshi, Maharishi Mahesh Yogi, J. Krishnamurti, Shunryu Suzuki and Marcus Aurelius, alongside researchers such as Herbert Benson and Jon Kabat-Zinn. Each is quoted in their own terms, and where they disagree, the book says so.</p>
+  </div>
+</div></section>
+
+<section class="plan" id="plan"><div class="wrap">
+  <div>
+    <p class="label">Chapter 17 · The 30-day plan</p>
+    <h2 style="margin-top:12px">One new art <em class="g">each week</em></h2>
+    <p class="lead">Twenty to forty minutes a day. Each week adds one art on top of the last and repeats the old ones until they stick.</p>
+    <div class="weeks">
+      <div class="week" style="--c:var(--still)"><span class="label">Week 1</span><p>Still<small>Build a daily sitting habit and notice the mind.</small></p></div>
+      <div class="week" style="--c:var(--body)"><span class="label">Week 2</span><p>Body<small>Keep sitting; add breath, movement and sleep anchors.</small></p></div>
+      <div class="week" style="--c:var(--make)"><span class="label">Week 3</span><p>Make<small>Keep both; add a daily making practice.</small></p></div>
+      <div class="week" style="--c:var(--ai)"><span class="label">Week 4</span><p>Amplify<small>Keep all three; bring AI in with the sandwich method.</small></p></div>
+      <div class="week" style="--c:#D9734E"><span class="label">Days 29–30</span><p>Integrate<small>Review, choose what to keep, and design your own day.</small></p></div>
+    </div>
+  </div>
+  <div>
+    <div class="cal" id="cal" aria-label="30-day calendar: dots show how many arts are in play each day; filled squares are weekly reviews"></div>
+    <div class="minday"><span class="label">On a bad day: the minimum day</span>
+      <table>
+        <tr><td>Q</td><td>Ask once: “What actually matters today?”</td></tr>
+        <tr><td>U</td><td>Three long out-breaths</td></tr>
+        <tr><td>I</td><td>One short walk, or ten squats</td></tr>
+        <tr><td>E</td><td>Make one small thing: a sentence, a sketch, a fix</td></tr>
+        <tr><td>T</td><td>Hand one chore to AI so you have room for the rest</td></tr>
+      </table>
+    </div>
+  </div>
+</div></section>
+
+<section style="padding-top:0"><div class="wrap">
+  <p class="label">Chapter 18 · Three stories</p>
+  <h2 style="margin-top:12px">The whole loop, <em class="g">in a real week</em></h2>
+  <div class="stories">
+    <div class="story" style="--c:var(--still)"><h3>Meera</h3><p>The founder who could not switch off.</p></div>
+    <div class="story" style="--c:var(--make)"><h3>Daniel</h3><p>The teacher who stopped making things.</p></div>
+    <div class="story" style="--c:var(--ai)"><h3>Aisha</h3><p>The engineer who leaned on AI for everything.</p></div>
+  </div>
+  <p class="storynote">The stories are composites built for teaching; people and numbers are illustrative.</p>
+</div></section>
+
+<section style="padding-top:0"><div class="wrap">
+  <p class="label">What you get</p>
+  <h2 style="margin-top:12px">Practices you can <em class="g">start today</em></h2>
+  <div class="get">
+    <div><h3>A first meditation practice</h3><p>Breath counting, the relaxation response, open listening and self-inquiry, with what the first month will feel like.</p></div>
+    <div><h3>Four breaths</h3><p>Cyclic sighing, slow breathing and more, with when to use each and when not to.</p></div>
+    <div><h3>A body plan that fits</h3><p>Weekly movement targets from the guidelines, strength snacks, and sleep and food anchors.</p></div>
+    <div><h3>A making habit</h3><p>Five whys, first principles, beginner's mind and a daily 20-minute making loop.</p></div>
+    <div><h3>A tested prompt library</h3><p>Prompts for thinking, creating, practice and health, each with what to check in the answer.</p></div>
+    <div><h3>A day built on QUIET</h3><p>A template day, the minimum day, the 30-day plan, and Test yourself questions with answers.</p></div>
+  </div>
+</div></section>
+
+<section class="checkout" id="buy"><div class="wrap">
+  <div class="box">
+    <div>
+      <p class="label">Get the book</p>
+      <h2 style="margin-top:12px">Begin with <em class="g">two quiet minutes</em></h2>
+      <ul>
+        <li>129-page PDF and EPUB, first edition, November 2026</li>
+        <li>Hindi edition included: शांत मन, जो रचता है (131-page PDF + EPUB)</li>
+        <li>35 figures and a printable QUIET card</li>
+        <li>The 30-day plan as a checklist</li>
+        <li>The full prompt library from Part V</li>
+        <li>The complete source list with links</li>
+      </ul>
+    </div>
+    <div class="bill">
+      <table aria-label="Price breakdown">
+        <tr><td>Book (PDF + EPUB)</td><td data-base>₹338.14</td></tr>
+        <tr><td>GST 18%</td><td data-gst>₹60.86</td></tr>
+        <tr class="total"><td>Total</td><td data-price>₹399</td></tr>
+      </table>
+      <button class="btn" type="button" data-buy>Buy now <span aria-hidden="true">→</span></button>
+      <p class="notice" data-notice aria-live="polite"></p>
+      <p class="fine">Secure checkout by Razorpay: UPI, cards and netbanking. Price includes GST. Your download opens as soon as payment completes.</p>
+      <p class="bundle" id="bundle" hidden>Also reading <b>The Agent at Your Desk</b>? <a id="bundle-link" href="#" target="_blank" rel="noopener">Get both books together</a>.</p>
+    </div>
+  </div>
+</div></section>
+
+<section id="faq" style="padding-top:0"><div class="wrap">
+  <h2>Questions</h2>
+  <div class="faq">
+    <details><summary>What format is it?</summary><p>A 129-page PDF plus an EPUB for e-readers. It reads well on a phone, tablet or laptop and prints cleanly.</p></details>
+    <details><summary>Do I need to meditate already?</summary><p>No. You need a place to sit, somewhere to walk, a notebook and any AI assistant. Most practices take five to twenty minutes, and none needs equipment, money or belief.</p></details>
+    <details><summary>Is it religious?</summary><p>It quotes Indian, Buddhist, Zen and Stoic teachers in their own words, with sources, and sets them beside modern research. You don't have to believe anything to use the practices.</p></details>
+    <details><summary>Which AI tools does it use?</summary><p>Any assistant works. The prompts are written so you can use them in Claude, ChatGPT, Gemini or whatever you already have.</p></details>
+    <details><summary>Does it teach Transcendental Meditation?</summary><p>No. The book discusses TM research but doesn't teach TM and isn't affiliated with any meditation organisation.</p></details>
+    <details><summary>Is there a Hindi version?</summary><p>Yes, and it comes free with every purchase. शांत मन, जो रचता है is the full book in conversational Hindi, as a PDF and an EPUB. Prompts and source titles stay in English so they work as written.</p></details>
+  </div>
+  <p class="safety"><b>Not medical advice.</b> The book is for education and reflection. It doesn't replace a doctor, therapist or dietitian. Talk to a doctor before changing exercise, diet, breathing practice or medication. If you are in crisis, contact your local emergency number or a crisis line.</p>
+</div></section>
+
+<section class="also" id="also"><div class="wrap">
+  <a class="also-card" href="/agent-at-your-desk/" target="_blank" rel="noopener">
+    <img src="media/agent_cover.jpg" alt="Cover of The Agent at Your Desk by Ashish" width="800" height="1280" loading="lazy">
+    <div><p class="also-label">Also by Ashish</p><h3 class="also-title">The Agent at Your Desk</h3><p class="also-sub">A practical field guide to handing real computer work to AI agents. 145 pages, PDF + EPUB.</p><span class="also-go">See the book →</span></div>
+  </a>
+</div></section>
+<section id="policies" style="padding-top:0"><div class="wrap">
+  <p class="label">Store policies</p>
+  <div class="faq">
+    <details id="terms"><summary>Terms of sale</summary><p>You are buying a personal, non-transferable licence to one digital copy of The Still Mind That Makes (PDF and EPUB) and its companion files. You may keep copies on your own devices and print it for personal use. Please don't share, resell or upload the file. Prices are in Indian rupees and include GST.</p></details>
+    <details id="refunds"><summary>Refunds and delivery</summary><p>Your download link opens straight after payment. If the download doesn't open or the file won't open, write to us and we'll resend it or refund you in full. Because the book is a digital download, we don't offer refunds once it has been delivered and opened, except for a duplicate payment.</p></details>
+    <details id="privacy"><summary>Privacy</summary><p>We collect your name, email and phone number only to process your order, send the book and issue your GST invoice. Payments are handled by our payment provider; we never see or store your card or UPI details. We don't sell your data. You can ask us to delete your details at any time.</p></details>
+    <details id="contact"><summary>Contact</summary><p>Questions about an order? Message <a href="https://www.instagram.com/buildwithashish.ai/" target="_blank" rel="noopener">@buildwithashish.ai</a> on Instagram.</p></details>
+  </div>
+</div></section>
+</main>
+
+<footer><div class="wrap"><span>The Still Mind That Makes · © 2026 Ashish · Build with Ashish</span><span><a href="#terms">Terms</a> · <a href="#refunds">Refunds</a> · <a href="#privacy">Privacy</a> · <a href="#contact">Contact</a> · Instagram <a href="https://www.instagram.com/buildwithashish.ai/" target="_blank" rel="noopener">@buildwithashish.ai</a></span></div></footer>
+
+<script>
+// Edit these when the price and payment links are confirmed.
+const PRICE_INR = 399;          // GST-inclusive
+const GST_RATE = 0.18;
+const CHECKOUT_URL = "";         // Razorpay Payment Page link
+const BUNDLE_URL = "";           // optional: both books together
+
+(function(){
+  const fmt = n => "₹" + n.toLocaleString("en-IN",{minimumFractionDigits: Number.isInteger(n)?0:2, maximumFractionDigits:2});
+  const base = Math.round(PRICE_INR/(1+GST_RATE)*100)/100, gst = Math.round((PRICE_INR-base)*100)/100;
+  document.querySelectorAll("[data-price]").forEach(e=>e.textContent=fmt(PRICE_INR));
+  document.querySelectorAll("[data-base]").forEach(e=>e.textContent=fmt(base));
+  document.querySelectorAll("[data-gst]").forEach(e=>e.textContent=fmt(gst));
+  if (BUNDLE_URL){ document.getElementById("bundle").hidden=false; document.getElementById("bundle-link").href=BUNDLE_URL; }
+  document.querySelectorAll("[data-buy]").forEach(btn=>btn.addEventListener("click",()=>{
+    if (CHECKOUT_URL){ const a=document.createElement("a"); a.href=CHECKOUT_URL; a.target="_blank"; a.rel="noopener"; a.click(); return; }
+    document.querySelectorAll("[data-notice]").forEach(n=>n.textContent="");
+    const n = btn.parentElement.parentElement.querySelector("[data-notice]") || document.querySelector("[data-notice]");
+    n.textContent = "Checkout opens here once payments are set up.";
+  }));
+
+  // 30-day calendar: dots = arts in play, filled = weekly review
+  const cal=document.getElementById("cal");
+  const C=["var(--still)","var(--body)","var(--make)","var(--ai)","#D9734E"];
+  for(let d=1; d<=30; d++){
+    const w = d>28 ? 4 : Math.floor((d-1)/7), arts = d>28 ? 4 : w+1, rev = d%7===0 || d>28;
+    const c=document.createElement("div"); c.style.setProperty("--c",C[w]); if(rev) c.className="rev";
+    c.innerHTML = d + "<span>" + "<i></i>".repeat(arts) + "</span>"; c.title="Day "+d; cal.appendChild(c);
+  }
+
+  // Two-minute QUIET (Chapter 1)
+  const S=[
+    ["Q · Question the why","Ask silently: “What is actually happening right now?”"],
+    ["U · Unwind into stillness","Let the breath go out slowly, three times."],
+    ["I · Inhabit the body","Notice your feet, your hands, your belly."],
+    ["E · Explore divergently","Think of three different things you could do with the next hour."],
+    ["T · Team up with AI","Pick one question you could hand to an AI to help with it. Then open your eyes and carry on."]
+  ];
+  const STEP=24, TOTAL=STEP*5, Ls=[...document.querySelectorAll(".letters button")];
+  const qh=document.getElementById("qh"), qp=document.getElementById("qp"), bar=document.getElementById("qbar"), qt=document.getElementById("qtime"), go=document.getElementById("qgo");
+  let t=0, timer=null, cur=-1;
+  const show=i=>{ if(i===cur) return; cur=i; Ls.forEach((b,k)=>b.toggleAttribute("aria-current",false)); if(i>=0){ Ls[i].setAttribute("aria-current","step"); qh.textContent=S[i][0]; qp.textContent=S[i][1]; } };
+  const tick=()=>{ const left=Math.max(0,TOTAL-t); qt.textContent=Math.floor(left/60)+":"+String(Math.floor(left%60)).padStart(2,"0"); bar.style.width=(100*t/TOTAL)+"%"; };
+  const stop=()=>{ clearInterval(timer); timer=null; go.textContent = t>0 && t<TOTAL ? "Resume" : "Start"; };
+  go.addEventListener("click",()=>{
+    if(timer){ stop(); return; }
+    if(t>=TOTAL){ t=0; }
+    go.textContent="Pause"; show(Math.min(4,Math.floor(t/STEP)));
+    timer=setInterval(()=>{ t+=0.25; tick(); show(Math.min(4,Math.floor(t/STEP)));
+      if(t>=TOTAL){ stop(); qh.textContent="That is the whole book in two minutes."; qp.textContent="The rest is learning to do each letter well."; Ls.forEach(b=>b.removeAttribute("aria-current")); cur=-1; } },250);
+  });
+  document.getElementById("qreset").addEventListener("click",()=>{ stop(); t=0; tick(); cur=-1; Ls.forEach(b=>b.removeAttribute("aria-current")); qh.textContent="Sit comfortably."; qp.textContent="Five steps of about 24 seconds each. Read the prompt, then close your eyes if you like."; go.textContent="Start"; });
+  Ls.forEach((b,i)=>b.addEventListener("click",()=>{ stop(); t=i*STEP; tick(); cur=-1; show(i); go.textContent="Resume"; }));
+
+  // Reel
+  const v=document.getElementById("reel"), snd=document.getElementById("sound");
+  snd.addEventListener("click",()=>{ v.muted=!v.muted; if(!v.muted){ v.currentTime=0; v.play().catch(()=>{}); } snd.setAttribute("aria-pressed",String(!v.muted)); snd.textContent=v.muted?"Sound on":"Mute"; });
+  document.querySelectorAll("[data-lang]").forEach(b=>b.addEventListener("click",()=>{
+    const l=b.dataset.lang; document.querySelectorAll("[data-lang]").forEach(x=>x.setAttribute("aria-pressed",String(x===b)));
+    v.poster="media/poster_"+l+".jpg"; v.querySelector("source").src="media/reel_"+l+".mp4";
+    const m=v.muted; v.load(); v.muted=m; v.play().catch(()=>{});
+  }));
+  const openHash=()=>{const d=document.getElementById(location.hash.slice(1)); if(d&&d.tagName==="DETAILS") d.open=true;};
+  window.addEventListener("hashchange",openHash); openHash();
+})();
+</script>
+
+</body>
+</html>

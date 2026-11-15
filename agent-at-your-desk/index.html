@@ -1,0 +1,496 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>The Agent at Your Desk, by Ashish</title>
+<meta name="description" content="A practical, research-backed guide to handing real work to AI agents. 145 pages, PDF + EPUB, English + Hindi.">
+<meta name="theme-color" content="#0E0E11">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<meta property="og:type" content="website">
+<meta property="og:title" content="The Agent at Your Desk, by Ashish">
+<meta property="og:description" content="A practical, research-backed guide to handing real work to AI agents. 145 pages, PDF + EPUB, English + Hindi.">
+<meta property="og:image" content="https://buildwithashish.com/agent-at-your-desk/media/cover4.jpg">
+<meta property="og:url" content="https://buildwithashish.com/agent-at-your-desk/"><link rel="canonical" href="https://buildwithashish.com/agent-at-your-desk/">
+<meta name="twitter:card" content="summary_large_image">
+</head>
+<body>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,500;14..32,600;14..32,700;14..32,900&family=JetBrains+Mono:wght@400;500&family=Poppins:wght@500;700&display=swap">
+<style>
+/* Layout: one dark desk. Copy column on the left, the Reel in a phone on the right; then real pages from the book, the 30-day calendar, and checkout. */
+:root{
+  --night:#0E0E11; --card:#17171C; --card-2:#1E1E24; --line:#2A2A31;
+  --fg:#F4F1EC; --muted:#8A877F; --orange:#FF8A3D; --marigold:#FFC65A;
+  --green:#3DDC84; --red:#FF4D4D;
+  --display:"Inter",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
+  --body:"Inter",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
+  --mono:"JetBrains Mono",ui-monospace,"SFMono-Regular",Menlo,Consolas,monospace;
+  --hindi:"Poppins","Noto Sans Devanagari","Nirmala UI",sans-serif;
+  color-scheme:dark;
+}
+*{box-sizing:border-box}
+body{background:var(--night);color:var(--fg);font:500 16px/1.6 var(--body);-webkit-font-smoothing:antialiased}
+.wrap{max-width:1120px;margin:0 auto;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+a{color:var(--orange)}
+:focus-visible{outline:2px solid var(--orange);outline-offset:3px;border-radius:6px}
+h1,h2,h3{font-family:var(--display);text-wrap:balance;margin:0}
+h2{font-size:clamp(28px,4.2vw,44px);font-weight:900;letter-spacing:-.035em;line-height:1.05}
+h3{font-size:20px;font-weight:700;letter-spacing:-.015em;line-height:1.25}
+p{margin:0}
+.label{font:500 12px/1.4 var(--mono);letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
+.o{color:var(--orange)}
+section{padding-block:72px}
+
+/* draft strip */
+.draft{background:var(--card);border-bottom:1px solid var(--line)}
+.draft .wrap{display:flex;gap:10px;align-items:center;padding-block:10px;font:500 13px/1.4 var(--mono);color:var(--marigold)}
+.draft .dot{width:8px;height:8px;border-radius:50%;background:var(--marigold);flex:none}
+
+/* top bar */
+.top .wrap{display:flex;justify-content:space-between;align-items:center;gap:16px;padding-block:22px}
+.brand{display:flex;align-items:center;gap:10px;text-decoration:none;color:var(--fg);font:900 18px/1 var(--display);letter-spacing:-.04em}
+.brand svg{width:30px;height:30px;flex:none}
+.top nav{display:flex;gap:22px;font-size:14px}
+.top nav a{color:var(--muted);text-decoration:none}
+.top nav a:hover{color:var(--fg)}
+
+/* hero */
+.hero .wrap{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,.85fr);gap:56px;align-items:center;padding-block:28px 72px}
+.hero h1{font-size:clamp(46px,7.4vw,92px);font-weight:900;letter-spacing:-.045em;line-height:.95;margin-top:18px}
+.hero h1 span{display:block;color:var(--orange)}
+.sub{margin-top:20px;font-size:19px;line-height:1.5;color:var(--fg);max-width:34ch}
+.hook{margin-top:26px;border-left:3px solid var(--orange);padding-left:16px;color:var(--muted);max-width:52ch}
+.hook b{color:var(--fg);font-weight:600}
+.facts{display:flex;flex-wrap:wrap;gap:10px;margin-top:26px}
+.facts span{font:500 13px/1 var(--mono);padding:9px 12px;border:1px solid var(--line);border-radius:999px;color:var(--fg)}
+.buyrow{display:flex;flex-wrap:wrap;align-items:center;gap:18px 22px;margin-top:32px}
+.btn{appearance:none;border:0;cursor:pointer;background:var(--orange);color:#1a0d04;font:700 17px/1 var(--display);padding:18px 26px;border-radius:12px;display:inline-flex;align-items:center;gap:10px;transition:transform .15s ease,background .15s ease}
+.btn:hover{background:#ff9b57;transform:translateY(-1px)}
+.btn:active{transform:translateY(0)}
+.price{display:flex;flex-direction:column;gap:2px}
+.price strong{font:900 30px/1 var(--display);letter-spacing:-.03em;font-variant-numeric:tabular-nums}
+.price small{font:500 12px/1.4 var(--mono);color:var(--muted)}
+.notice{margin-top:14px;font:500 13px/1.5 var(--mono);color:var(--marigold);min-height:1.5em}
+
+/* phone + reel */
+.phone-col{display:flex;flex-direction:column;align-items:center;gap:14px}
+.phone{position:relative;width:min(320px,100%);aspect-ratio:9/16;border-radius:34px;padding:10px;background:#050507;border:1px solid var(--line);box-shadow:0 40px 80px -30px rgba(255,138,61,.28),0 0 0 6px #121216}
+.phone video{width:100%;height:100%;object-fit:cover;border-radius:25px;display:block;background:var(--card)}
+.lang{display:inline-flex;border:1px solid var(--line);border-radius:999px;padding:3px;background:var(--card)}
+.lang button{appearance:none;border:0;background:transparent;color:var(--muted);font:600 13px/1 var(--body);padding:9px 16px;border-radius:999px;cursor:pointer}
+.lang button[aria-pressed="true"]{background:var(--fg);color:var(--night)}
+.lang button.hi{font-family:var(--hindi)}
+.vcap{font:500 12px/1.4 var(--mono);color:var(--muted);text-align:center;max-width:300px}
+.sound{appearance:none;cursor:pointer;background:transparent;color:var(--fg);border:1px solid var(--line);border-radius:999px;font:600 13px/1 var(--body);padding:9px 16px}
+.sound:hover{border-color:var(--orange)}
+.sound[aria-pressed="true"]{border-color:var(--orange);color:var(--orange)}
+
+/* ideas */
+.ideas-head{display:flex;justify-content:space-between;align-items:end;gap:24px;flex-wrap:wrap;margin-bottom:40px}
+.ideas-head p{color:var(--muted);max-width:44ch}
+.ideas{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px}
+.idea{background:var(--card);border:1px solid var(--line);border-radius:18px;overflow:hidden;display:grid;grid-template-rows:auto 1fr}
+.idea figure{margin:0;height:250px;overflow:hidden;background:#fff;position:relative}
+.idea figure img{width:100%;display:block;object-fit:cover;object-position:var(--pos,center top);height:100%}
+.idea figure figcaption{position:absolute;right:10px;bottom:10px;font:500 11px/1 var(--mono);background:var(--night);color:var(--fg);padding:6px 8px;border-radius:6px}
+.idea .txt{padding:22px 24px 26px;display:flex;flex-direction:column;gap:10px}
+.idea .txt p{color:var(--muted)}
+.idea .tag{font:500 12px/1 var(--mono);color:var(--orange)}
+
+/* GOALS strip */
+.goals{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:10px;margin-top:14px}
+.goals div{background:var(--card-2);border-radius:10px;padding:10px 8px;text-align:center}
+.goals b{display:block;font:900 22px/1 var(--display);color:var(--orange)}
+.goals span{font:500 11px/1.3 var(--mono);color:var(--muted)}
+
+/* 30 days */
+.plan .wrap{display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);gap:56px;align-items:start}
+.plan p.lead{color:var(--muted);margin-top:18px;max-width:46ch}
+.weeks{display:grid;gap:14px;margin-top:28px}
+.week{display:grid;grid-template-columns:86px minmax(0,1fr);gap:14px;align-items:baseline;border-top:1px solid var(--line);padding-top:14px}
+.week .label{color:var(--orange)}
+.week p{color:var(--fg)}
+.week p small{display:block;color:var(--muted);font-size:14px;margin-top:2px}
+.cal{display:grid;grid-template-columns:repeat(7,minmax(0,1fr));gap:8px}
+.cal div{aspect-ratio:1;border-radius:9px;display:grid;place-items:center;font:500 13px/1 var(--mono);font-variant-numeric:tabular-nums;background:var(--card);color:var(--muted);border:1px solid var(--line)}
+.cal .w1{background:rgba(255,138,61,.16);color:var(--fg);border-color:rgba(255,138,61,.35)}
+.cal .w2{background:rgba(255,198,90,.14);color:var(--fg);border-color:rgba(255,198,90,.3)}
+.cal .w3{background:rgba(61,220,132,.12);color:var(--fg);border-color:rgba(61,220,132,.3)}
+.cal .w4{background:var(--card-2);color:var(--fg);border-color:#3a3a44}
+.cal .d30{background:var(--orange);color:#1a0d04;border-color:var(--orange);font-weight:700}
+.legend{display:flex;flex-wrap:wrap;gap:8px 18px;margin-top:16px;font:500 12px/1 var(--mono);color:var(--muted)}
+.legend i{display:inline-block;width:10px;height:10px;border-radius:3px;margin-right:6px;vertical-align:-1px}
+.outcome{margin-top:22px;background:var(--card);border:1px solid var(--line);border-radius:14px;padding:18px 20px;color:var(--fg)}
+.outcome .label{display:block;margin-bottom:6px}
+
+/* what you get */
+.get{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:28px 32px;margin-top:40px}
+.get div{border-top:2px solid var(--orange);padding-top:16px;display:flex;flex-direction:column;gap:8px}
+.get p{color:var(--muted)}
+
+/* checkout */
+.checkout .box{background:var(--card);border:1px solid var(--line);border-radius:22px;padding:clamp(24px,5vw,48px);display:grid;grid-template-columns:minmax(0,1.2fr) minmax(0,.8fr);gap:40px;align-items:center}
+.checkout ul{list-style:none;padding:0;margin:22px 0 0;display:grid;gap:10px}
+.checkout li{display:flex;gap:10px;align-items:flex-start}
+.checkout li::before{content:"";flex:none;width:16px;height:16px;margin-top:4px;border-radius:4px;background:var(--green);-webkit-mask:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Cpath d='M3 8.5l3 3 7-7' fill='none' stroke='black' stroke-width='2.4' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E") center/contain no-repeat;mask:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Cpath d='M3 8.5l3 3 7-7' fill='none' stroke='black' stroke-width='2.4' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E") center/contain no-repeat}
+.bill{background:var(--night);border:1px solid var(--line);border-radius:16px;padding:22px}
+.bill table{width:100%;border-collapse:collapse;font-variant-numeric:tabular-nums}
+.bill td{padding:8px 0;color:var(--muted);font-size:15px}
+.bill td:last-child{text-align:right;color:var(--fg)}
+.bill tr.total td{border-top:1px solid var(--line);padding-top:14px;font:900 22px/1 var(--display);color:var(--fg)}
+.bill .btn{width:100%;justify-content:center;margin-top:18px}
+.bill .fine{margin-top:12px;font:500 12px/1.5 var(--mono);color:var(--muted)}
+
+/* faq */
+.faq{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px 28px;margin-top:32px}
+details{border-top:1px solid var(--line);padding-block:16px}
+summary{cursor:pointer;font-weight:600;list-style:none;display:flex;justify-content:space-between;gap:16px}
+summary::-webkit-details-marker{display:none}
+summary::after{content:"+";color:var(--orange);font:500 20px/1 var(--mono)}
+details[open] summary::after{content:"−"}
+details p{color:var(--muted);margin-top:10px}
+
+
+/* contents */
+.toc .wrap{display:grid;grid-template-columns:minmax(0,.7fr) minmax(0,1.3fr);gap:56px;align-items:center}
+.cover{margin:0;max-width:340px;justify-self:center;transform:rotate(-2.5deg);border-radius:6px;overflow:hidden;box-shadow:0 30px 60px -20px rgba(0,0,0,.7),0 0 0 1px var(--line)}
+.cover img{display:block;width:100%;height:auto}
+.parts{list-style:none;padding:0;margin:26px 0 0;display:grid;gap:0}
+.parts li{display:grid;grid-template-columns:76px minmax(0,1fr);gap:14px;border-top:1px solid var(--line);padding-block:14px}
+.parts li .label{color:var(--orange);padding-top:3px}
+.parts h3{font-size:18px}
+.parts p{color:var(--muted);font-size:15px;margin-top:4px}
+.back{margin-top:10px}
+/* recipes */
+.rlist{list-style:none;counter-reset:r;padding:0;margin:18px 0 0;display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:10px}
+.rlist li{counter-increment:r;background:var(--card);border:1px solid var(--line);border-radius:12px;padding:14px;font-weight:600;font-size:15px;display:flex;flex-direction:column;gap:8px}
+.rlist li::before{content:counter(r,decimal-leading-zero);font:500 12px/1 var(--mono);color:var(--orange)}
+.rnote{margin-top:14px;color:var(--muted);font-size:15px}
+.cal div{flex-direction:column;gap:3px}
+.cal div em{font:500 9.5px/1.1 var(--body);font-style:normal;opacity:.8;text-align:center}
+.cal .d29{background:var(--orange);color:#1a0d04;border-color:var(--orange);font-weight:700}
+@media (max-width:900px){.toc .wrap{grid-template-columns:minmax(0,1fr)}.cover{max-width:240px}.rlist{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media (max-width:640px){.parts li{grid-template-columns:minmax(0,1fr);gap:2px}.cal div em{display:none}}
+
+.pol{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:0 28px;margin-top:12px}
+@media (max-width:640px){.pol{grid-template-columns:minmax(0,1fr)}}
+.loopnote{margin-top:14px;color:var(--muted);font-size:15px;max-width:60ch}
+.cases-grid{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,.85fr);gap:48px;align-items:start}
+.cases .lead{color:var(--muted);margin-top:18px;max-width:52ch}
+.case-list{display:grid;margin-top:24px}
+.case-list article{display:grid;grid-template-columns:60px minmax(0,1fr);gap:14px;border-top:1px solid var(--line);padding-block:16px}
+.case-list .label{color:var(--orange);padding-top:3px}
+.case-list p{color:var(--muted);font-size:15px;margin-top:4px}
+.case-fig{margin:0;background:#fff;border-radius:14px;overflow:hidden;height:520px;position:relative;border:1px solid var(--line)}
+.case-fig img{width:100%;display:block}
+.case-fig figcaption{position:absolute;left:0;right:0;bottom:0;background:var(--card);color:var(--muted);font:500 12px/1.4 var(--mono);padding:10px 14px}
+@media (max-width:900px){.cases-grid{grid-template-columns:minmax(0,1fr)}.case-fig{height:380px}}
+@media (max-width:640px){.case-list article{grid-template-columns:minmax(0,1fr);gap:2px}}
+
+.byline{margin-top:14px;font:600 18px/1.2 var(--body);color:var(--muted)}
+.idea figure.fit{display:grid;place-items:center;padding:14px}
+.idea figure.fit img{object-fit:contain;height:auto;max-height:100%}
+.case-fig{height:auto!important;padding:16px 16px 52px}
+.res-grid{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:48px;align-items:center}
+.research .lead{color:var(--muted);margin-top:18px;max-width:56ch}
+.stats{display:grid;gap:0;margin-top:24px}
+.stats div{display:grid;grid-template-columns:150px minmax(0,1fr);gap:14px;align-items:baseline;border-top:1px solid var(--line);padding-block:14px}
+.stats b{font:900 20px/1.1 var(--display);color:var(--orange);font-variant-numeric:tabular-nums}
+.stats span{color:var(--muted);font-size:15px}
+.res-fig{margin:0;background:#fff;border-radius:14px;overflow:hidden;border:1px solid var(--line)}
+.res-fig img{display:block;width:100%;height:auto;padding:12px}
+.res-fig figcaption{background:var(--card);color:var(--muted);font:500 12px/1.4 var(--mono);padding:10px 14px}
+@media (max-width:900px){.res-grid{grid-template-columns:minmax(0,1fr)}}
+@media (max-width:640px){.stats div{grid-template-columns:minmax(0,1fr);gap:4px}}
+.also{padding-block:0 56px}
+.also-card{display:grid;grid-template-columns:120px minmax(0,1fr);gap:24px;align-items:center;max-width:720px;text-decoration:none;color:var(--fg);background:var(--card);border:1px solid var(--line);border-radius:16px;padding:18px;transition:border-color .15s}
+.also-card:hover{border-color:var(--orange)}
+.also-card img{width:100%;height:auto;border-radius:6px;display:block}
+.also-sub{color:var(--muted);margin:0 0 10px}
+@media (max-width:480px){.also-card{grid-template-columns:84px minmax(0,1fr);gap:14px}}
+footer{border-top:1px solid var(--line)}
+footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:16px;padding-block:28px 40px;color:var(--muted);font:500 13px/1.5 var(--mono)}
+
+@media (max-width:900px){
+  .hero .wrap,.plan .wrap,.checkout .box{grid-template-columns:minmax(0,1fr)}
+  .hero .wrap{gap:40px}
+  .get{grid-template-columns:repeat(2,minmax(0,1fr))}
+}
+@media (max-width:640px){
+  section{padding-block:52px}
+  .top nav{display:none}
+  .ideas,.faq,.get{grid-template-columns:minmax(0,1fr)}
+  .idea figure{height:210px}
+  .sub{font-size:17px}
+  .week{grid-template-columns:minmax(0,1fr);gap:4px}
+}
+@media (prefers-reduced-motion:reduce){*{transition:none!important}}
+</style>
+
+<div class="draft" role="note"><div class="wrap"><span class="dot"></span><span>Preview. Checkout opens soon.</span></div></div>
+
+<header class="top"><div class="wrap">
+  <a class="brand" href="#top" aria-label="Build with Ashish">
+    <svg viewBox="0 0 1000 1000" aria-hidden="true"><rect x="150" y="530" width="340" height="250" rx="18" fill="#F4F1EC"/><rect x="510" y="530" width="340" height="250" rx="18" fill="#F4F1EC"/><rect x="330" y="260" width="340" height="250" rx="18" fill="#FF8A3D"/></svg>
+    <span>Build with <span class="o">Ashish</span></span>
+  </a>
+  <nav aria-label="Sections"><a href="#contents">Contents</a><a href="#research">Research</a><a href="#inside">Inside</a><a href="#cases">Case studies</a><a href="#plan">30-day plan</a><a href="#buy">Buy</a><a href="#faq">FAQ</a></nav>
+</div></header>
+
+<main id="top">
+<section class="hero" style="padding-block:0"><div class="wrap">
+  <div>
+    <p class="label">A practical field guide · Research edition · November 2026</p>
+    <h1>The Agent <span>at Your Desk</span></h1>
+    <p class="byline">by Ashish</p>
+    <p class="sub">Mastering computer-use AI, rare connectors and custom plugins for real work.</p>
+    <p class="hook">AI gives you answers. <b>The hard part is what comes after:</b> six tabs, forty files, one invoice to chase. This book shows you how to hand that part to an AI agent, find connectors most people never discover, and build your own when nothing off the shelf fits. The methods work in any harness: Claude, ChatGPT, Gemini, Cursor or whatever comes next.</p>
+    <div class="facts"><span>145 pages · PDF + EPUB</span><span class="hi-chip">English + हिंदी</span><span>6 parts · 18 chapters</span><span>57 figures</span><span>3 case studies</span><span>30-day plan</span></div>
+    <div class="buyrow">
+      <button class="btn" type="button" data-buy>Get the playbook <span aria-hidden="true">→</span></button>
+      <div class="price"><strong data-price>₹499</strong><small>incl. 18% GST · instant download</small></div>
+    </div>
+    <p class="notice" data-notice aria-live="polite"></p>
+  </div>
+  <div class="phone-col">
+    <div class="phone"><video id="reel" muted autoplay loop playsinline preload="metadata" poster="media/poster_en.jpg" aria-label="Build with Ashish Reel about The Agent at Your Desk"><source src="media/reel_en.mp4" type="video/mp4"></video></div>
+    <div class="lang" role="group" aria-label="Reel language">
+      <button type="button" id="lang-en" aria-pressed="true" data-lang="en">English</button>
+      <button type="button" id="lang-hi" class="hi" aria-pressed="false" data-lang="hi">हिंदी</button>
+    </div>
+    <button type="button" class="sound" id="sound" aria-pressed="false">Sound on</button>
+    <p class="vcap">The Reel from Build with Ashish, narrated in Ashish's AI-cloned voice. Graphics built with Claude.</p>
+  </div>
+</div></section>
+
+
+<section class="toc" id="contents"><div class="wrap">
+  <figure class="cover"><img src="media/cover4.jpg" alt="Cover of The Agent at Your Desk by Ashish: a practical field guide for professionals. Delegate, Discover, Build." width="800" height="1280"></figure>
+  <div>
+    <p class="label">Contents</p>
+    <h2 style="margin-top:12px">Delegate. Discover. <span class="o">Build.</span></h2>
+    <ol class="parts">
+      <li><span class="label">Part I</span><div><h3>The New Desk</h3><p>From chatbot to coworker · How agents actually use a computer · Setting up your agent workstation</p></div></li>
+      <li><span class="label">Part II</span><div><h3>Delegation Mastery</h3><p>Writing tasks an agent can finish · Ten workflows that pay for themselves · Supervising, verifying and recovering</p></div></li>
+      <li><span class="label">Part III</span><div><h3>The Connector Hunt</h3><p>Where connectors live · The rare and the underrated · Vetting a connector before you trust it</p></div></li>
+      <li><span class="label">Part IV</span><div><h3>Build Your Own</h3><p>When to build · Your first MCP server · Skills, plugins and packaging · Building like a professional</p></div></li>
+      <li><span class="label">Part V</span><div><h3>Operating at a Professional Level</h3><p>Your AI operating system · The 30-day mastery plan</p></div></li>
+      <li><span class="label">Part VI</span><div><h3>Case Studies</h3><p>The consultant's Monday report · The agency content engine · The ops lead's invoice desk</p></div></li>
+    </ol>
+    <p class="back label">Plus: answers · glossary · visual cheat sheet · sources and further reading</p>
+    <p class="loopnote">The whole book follows one loop, the Agent Desk Loop: set up, brief, run, review, hunt, build, operate. Every chapter opens with a "you are here" strip and ends with a Test yourself quiz.</p>
+  </div>
+</div></section>
+
+<section class="research" id="research"><div class="wrap">
+  <div class="res-grid">
+    <div>
+      <p class="label">The research edition</p>
+      <h2 style="margin-top:12px">Built on evidence, <span class="o">not hype</span></h2>
+      <p class="lead">This edition was revised after a systematic review of the books, talks, research papers and official guides practitioners rely on most, from Ethan Mollick's Co-Intelligence and Chip Huyen's AI Engineering to the OSWorld and METR studies, OWASP's agentic risk list and Anthropic's engineering guides. Where the evidence changes what you should do, a green "What the research says" box tells you, with its source named.</p>
+      <div class="stats">
+        <div><b>12.2% → about 85%</b><span>Tasks finished on the OSWorld computer-use benchmark, April 2024 to November 2026</span></div>
+        <div><b>~4 months</b><span>How often the length of task agents can finish now doubles (METR, 2026)</span></div>
+        <div><b>19 pts</b><span>How much less likely BCG consultants were to be right on a task just outside AI's frontier</span></div>
+      </div>
+    </div>
+    <figure class="res-fig"><img src="media/fig4r.jpg" alt="Figure 4 from the book: on the OSWorld benchmark, the best model at launch finished 12.2% of tasks, the human baseline 72.4%, and top agents in November 2026 about 85%" loading="lazy"><figcaption>Figure 4 · "Passing a test is not the same as being safe to trust with your accounts."</figcaption></figure>
+  </div>
+</div></section>
+
+<section id="inside"><div class="wrap">
+  <div class="ideas-head">
+    <div><p class="label">Four ideas from inside</p><h2 style="margin-top:12px">Real pages, <span class="o">not a pitch deck</span></h2></div>
+    <p>Every chapter is built around a diagram you can use the same day. Here are four of them, straight from the book.</p>
+  </div>
+  <div class="ideas">
+    <article class="idea">
+      <figure class="fit"><img src="media/fig6r.jpg" alt="Figure 6 from the book: the REPEAT check, six letters scored 0 to 2 each" loading="lazy"><figcaption>Figure 6</figcaption></figure>
+      <div class="txt"><span class="tag">The REPEAT check</span><h3>Should this job go to an agent at all?</h3><p>Score Repeats, Explainable, Pipes exist, Errors cheap, Approvable and Time-hungry from 0 to 2. 9 to 12 means delegate now; 0 to 5 means keep it or redesign it first.</p></div>
+    </article>
+    <article class="idea">
+      <figure class="fit"><img src="media/fig7r.jpg" alt="Figure 7 from the book: pixels versus pipes, many fragile screen steps against one tool call" loading="lazy"><figcaption>Figure 7</figcaption></figure>
+      <div class="txt"><span class="tag">Pixels vs pipes</span><h3>One tool call beats twenty clicks</h3><p>Screenshots and clicks are slow and fragile. A tool call through the Model Context Protocol is fast and easy to check. Use pipes wherever they exist, and pixels only for the last mile.</p></div>
+    </article>
+    <article class="idea">
+      <figure class="fit"><img src="media/fig18r.jpg" alt="Figure 18 from the book: the GOALS brief, five boxes for Goal, Origin, Approach, Leave alone and Success" loading="lazy"><figcaption>Figure 18</figcaption></figure>
+      <div class="txt"><span class="tag">The GOALS brief</span><h3>Brief it like a colleague</h3><p>Agents fail in whichever part of the brief you leave out.</p>
+        <div class="goals" aria-label="GOALS"><div><b>G</b><span>Goal</span></div><div><b>O</b><span>Origin</span></div><div><b>A</b><span>Approach</span></div><div><b>L</b><span>Leave alone</span></div><div><b>S</b><span>Success test</span></div></div>
+      </div>
+    </article>
+    <article class="idea">
+      <figure class="fit"><img src="media/fig26r.jpg" alt="Figure 26 from the book: the five-minute review, five steps from reading the summary to approving" loading="lazy"><figcaption>Figure 26</figcaption></figure>
+      <div class="txt"><span class="tag">The five-minute review</span><h3>Don't watch it work. Check it.</h3><p>Read the summary and confidence list, spot-check three items, verify one number at its source, open it the way the recipient will, then approve. If two of three spot-checks fail, fix the brief and rerun.</p></div>
+    </article>
+  </div>
+</div></section>
+
+
+<section class="recipes" style="padding-top:0"><div class="wrap">
+  <p class="label">Chapter 5 · Ten workflows that pay for themselves</p>
+  <ol class="rlist">
+    <li>Inbox triage</li><li>Competitor briefing</li><li>Invoice collection</li><li>CRM tidy-up</li><li>Meeting prep pack</li><li>Social calendar</li><li>Reconciliation</li><li>Web form filling</li><li>File reorganising</li><li>Weekly report</li>
+  </ol>
+  <p class="rnote">Each recipe follows the same safety shape: read, propose, approve, act in batches, log.</p>
+</div></section>
+
+
+<section class="cases" id="cases"><div class="wrap">
+  <div class="cases-grid">
+    <div>
+      <p class="label">Part VI · Case studies</p>
+      <h2 style="margin-top:12px">Three real jobs, <span class="o">the whole loop</span></h2>
+      <p class="lead">Each case study runs one complete project from the REPEAT check to a working system, on the same template you can reuse for your own work. They are composite scenarios with illustrative numbers.</p>
+      <div class="case-list">
+        <article><span class="label">Ch 16</span><div><h3>The consultant's Monday report</h3><p>Four clients, a one-page update every Monday, and two and a half hours of copying numbers. A builder session drafts and an auditor session checks.</p></div></article>
+        <article><span class="label">Ch 17</span><div><h3>The agency content engine</h3><p>A six-person agency turns one blog post a week for each of eight clients into social posts, with skills keeping every client on brand.</p></div></article>
+        <article><span class="label">Ch 18</span><div><h3>The ops lead's invoice desk</h3><p>About 300 supplier invoices a month matched to purchase orders, and how to spot when a small custom server is the missing piece.</p></div></article>
+      </div>
+    </div>
+    <figure class="case-fig"><img src="media/fig54r.jpg" alt="Figure 54 from the book: the Monday report pipeline, from exports to a builder session, an auditor session and a scheduled report" loading="lazy"><figcaption>Figure 54 · The Monday report pipeline</figcaption></figure>
+  </div>
+</div></section>
+
+<section class="plan" id="plan"><div class="wrap">
+  <div>
+    <p class="label">The 30-day plan</p>
+    <h2 style="margin-top:12px">About 30 minutes <span class="o">most days</span></h2>
+    <p class="lead">Chapter 15 is a day-by-day plan, one small step a day, so reading turns into a working, measured setup by the end of the month.</p>
+    <div class="weeks">
+      <div class="week"><span class="label">Week 1</span><p>Foundations</p></div>
+      <div class="week"><span class="label">Week 2</span><p>Delegation</p></div>
+      <div class="week"><span class="label">Week 3</span><p>The hunt<small>Find and vet the connectors your work needs.</small></p></div>
+      <div class="week"><span class="label">Week 4</span><p>Build<small>Build and test your own MCP server, connect it, package it as a plugin, and run your first weekly review.</small></p></div>
+    </div>
+  </div>
+  <div>
+    <div class="cal" id="cal" aria-label="30-day calendar, four weeks"></div>
+    <div class="legend"><span><i style="background:rgba(255,138,61,.5)"></i>Foundations</span><span><i style="background:rgba(255,198,90,.5)"></i>Delegation</span><span><i style="background:rgba(61,220,132,.5)"></i>The hunt</span><span><i style="background:#3a3a44"></i>Build</span><span><i style="background:var(--orange)"></i>Your system</span></div>
+    <div class="outcome"><span class="label">By day 30</span>A working agent desk, a set of trusted recipes, a vetted connector stack, your first skill, your first server, and the numbers to prove it pays.</div>
+  </div>
+</div></section>
+
+<section><div class="wrap">
+  <p class="label">What you get</p>
+  <h2 style="margin-top:12px">Everything after <span class="o">the answer</span></h2>
+  <div class="get">
+    <div><h3>Set up the desk</h3><p>How the model, the harness and connectors fit together, a safe first-hour setup, and the REPEAT check for deciding which jobs to hand over.</p></div>
+    <div><h3>Delegate real tasks</h3><p>The GOALS brief, plus ten workflows that pay for themselves, each with what you need, the prompt, what you get and how it tends to fail.</p></div>
+    <div><h3>Find rare connectors</h3><p>Where connectors live, the rare and underrated ones, and a vetting check before you trust any of them.</p></div>
+    <div><h3>Supervise and recover</h3><p>The five-minute review, the signs that mean stop and take over, and how to undo a mistake.</p></div>
+    <div><h3>Build your own server</h3><p>Build desk-notes, your first MCP server, from an empty folder. The code was run and tested before printing, then package it with a skill as a plugin.</p></div>
+    <div><h3>See it end to end</h3><p>Three case studies that run the full loop, and a Test yourself quiz in every chapter with answers at the back.</p></div>
+  </div>
+</div></section>
+
+<section class="checkout" id="buy"><div class="wrap">
+  <div class="box">
+    <div>
+      <p class="label">Get the playbook</p>
+      <h2 style="margin-top:12px">Put an agent <span class="o">at your desk</span></h2>
+      <ul>
+        <li>PDF and EPUB, research edition, November 2026</li>
+        <li>Hindi edition included: आपकी डेस्क पर Agent (155-page PDF + EPUB)</li>
+        <li>Ten workflow recipes and three full case studies</li>
+        <li>Companion files: desk_notes.py and its test</li>
+        <li>The day-by-day 30-day plan</li>
+        <li>One-page cheat sheet, glossary and an annotated sources list</li>
+      </ul>
+    </div>
+    <div class="bill">
+      <table aria-label="Price breakdown">
+        <tr><td>Playbook (PDF)</td><td data-base>₹422.88</td></tr>
+        <tr><td>GST 18%</td><td data-gst>₹76.12</td></tr>
+        <tr class="total"><td>Total</td><td data-price>₹499</td></tr>
+      </table>
+      <button class="btn" type="button" data-buy>Buy now <span aria-hidden="true">→</span></button>
+      <p class="notice" data-notice aria-live="polite"></p>
+      <p class="fine">Secure checkout by Razorpay: UPI, cards and netbanking. Price includes GST. Your download opens as soon as payment completes.</p>
+    </div>
+  </div>
+</div></section>
+
+<section id="faq" style="padding-top:0"><div class="wrap">
+  <h2>Questions</h2>
+  <div class="faq">
+    <details><summary>What format is it?</summary><p>A 145-page PDF plus an EPUB for e-readers, with the Chapter 11 code and its test as companion files. The sample code is MIT-licensed. It reads well on a laptop, tablet or phone, and prints cleanly.</p></details>
+    <details><summary>Do I need to code?</summary><p>No. Parts I to III assume no coding at all. Part IV walks you through building your own connector line by line, and if you have edited a spreadsheet formula, you can follow it.</p></details>
+    <details><summary>Which AI apps does it cover?</summary><p>It teaches methods that work in any harness: Claude, ChatGPT, Gemini, Cursor or whatever comes next. Where a specific tool is the clearest way to show an idea, the book names it and says when it was checked.</p></details>
+    <details><summary>Will it go out of date?</summary><p>Every product claim was checked against the vendor's own documentation in November 2026, and the text flags details likely to move, like menu names and prices. The principles come first and the buttons second.</p></details>
+    <details id="hindi"><summary>Is there a Hindi version?</summary><p>Yes, and it comes free with every purchase. आपकी डेस्क पर Agent is the full book in conversational Hindi, with tech terms kept in English, as a PDF and an EPUB. Prompts, code and diagram labels stay in English so they work as written.</p></details>
+  </div>
+</div></section>
+<section class="also" id="also"><div class="wrap">
+  <a class="also-card" href="/still-mind-that-makes/" target="_blank" rel="noopener">
+    <img src="media/stillmind_cover.jpg" alt="Cover of The Still Mind That Makes by Ashish" width="800" height="1143" loading="lazy">
+    <div><p class="label">Also by Ashish</p><h3 style="margin:6px 0 4px;font-size:22px">The Still Mind That Makes</h3><p class="also-sub">Meditation, the body, creativity and AI, where ancient wisdom meets modern science. 129 pages, PDF + EPUB.</p><span class="o" style="font-weight:600">See the book →</span></div>
+  </a>
+</div></section>
+<section id="policies" class="policies" style="padding-top:0"><div class="wrap">
+  <p class="label">Store policies</p>
+  <div class="pol">
+    <details id="terms"><summary>Terms of sale</summary><p>You are buying a personal, non-transferable licence to one digital copy of The Agent at Your Desk (PDF and EPUB) and its companion files. You may read it on your own devices and print it for personal use. Please don't share, resell or upload the file. Prices are in Indian rupees and include GST.</p></details>
+    <details id="refunds"><summary>Refunds and delivery</summary><p>Your download link opens straight after payment. If the download doesn't open or the file won't open, write to us and we'll resend it or refund you in full. Because the book is a digital download, we don't offer refunds once it has been delivered and opened, except for a duplicate payment.</p></details>
+    <details id="privacy"><summary>Privacy</summary><p>We collect your name, email and phone number only to process your order, send the book and issue your GST invoice. Payments are handled by our payment provider; we never see or store your card or UPI details. We don't sell your data. You can ask us to delete your details at any time.</p></details>
+    <details id="contact"><summary>Contact</summary><p data-contact>Questions about an order? Message <a href="https://www.instagram.com/buildwithashish.ai/" target="_blank" rel="noopener">@buildwithashish.ai</a> on Instagram.</p></details>
+  </div>
+</div></section>
+</main>
+
+<footer><div class="wrap"><span>Build with Ashish · Real AI products, built on screen with Claude.</span><span><a href="#terms">Terms</a> · <a href="#refunds">Refunds</a> · <a href="#privacy">Privacy</a> · <a href="#contact">Contact</a> · Instagram <a href="https://www.instagram.com/buildwithashish.ai/" target="_blank" rel="noopener">@buildwithashish.ai</a></span></div></footer>
+
+<script>
+// Edit these when the price and payment link are confirmed.
+const PRICE_INR = 499;          // GST-inclusive
+const GST_RATE = 0.18;
+const CHECKOUT_URL = "";         // e.g. Razorpay Payment Page or Gumroad link
+
+(function(){
+  const fmt = n => "₹" + n.toLocaleString("en-IN",{minimumFractionDigits: Number.isInteger(n)?0:2, maximumFractionDigits:2});
+  const base = Math.round(PRICE_INR/(1+GST_RATE)*100)/100;
+  const gst = Math.round((PRICE_INR-base)*100)/100;
+  document.querySelectorAll("[data-price]").forEach(e=>e.textContent=fmt(PRICE_INR));
+  document.querySelectorAll("[data-base]").forEach(e=>e.textContent=fmt(base));
+  document.querySelectorAll("[data-gst]").forEach(e=>e.textContent=fmt(gst));
+
+  document.querySelectorAll("[data-buy]").forEach(btn=>btn.addEventListener("click",()=>{
+    if (CHECKOUT_URL){ const a=document.createElement("a"); a.href=CHECKOUT_URL; a.target="_blank"; a.rel="noopener"; a.click(); return; }
+    document.querySelectorAll("[data-notice]").forEach(n=>n.textContent="");
+    const n = btn.closest("div").parentElement.querySelector("[data-notice]") || document.querySelector("[data-notice]");
+    n.textContent = "Checkout opens here once payments are set up.";
+  }));
+
+  const cal = document.getElementById("cal");
+  const L=["Inventory","Setup","About me","1st brief","Recipe 1","Review","Review","Recipe","Recipe","Recipe","Chain","Auditor","Log","Log","Gaps","Install","Vet","Audit","Skill","Run it","Run it","Build","Test","Connect","Harden","Exam","Package","Package","Stack","Review"];
+  L.forEach((lab,i)=>{
+    const d=i+1, c=document.createElement("div");
+    c.innerHTML=d+"<em>"+lab+"</em>";
+    c.title="Day "+d+": "+lab;
+    c.className = d>=29 ? "d29" : d<=7 ? "w1" : d<=14 ? "w2" : d<=21 ? "w3" : "w4";
+    cal.appendChild(c);
+  });
+
+  const openHash=()=>{const d=document.getElementById(location.hash.slice(1)); if(d&&d.tagName==="DETAILS"){d.open=true;}};
+  window.addEventListener("hashchange",openHash); openHash();
+  const v=document.getElementById("reel");
+  const snd=document.getElementById("sound");
+  snd.addEventListener("click",()=>{
+    v.muted=!v.muted;
+    if(!v.muted){ v.currentTime=0; v.play().catch(()=>{}); }
+    snd.setAttribute("aria-pressed", String(!v.muted));
+    snd.textContent = v.muted ? "Sound on" : "Mute";
+  });
+  document.querySelectorAll("[data-lang]").forEach(b=>b.addEventListener("click",()=>{
+    const l=b.dataset.lang;
+    document.querySelectorAll("[data-lang]").forEach(x=>x.setAttribute("aria-pressed", String(x===b)));
+    v.poster="media/poster_"+l+".jpg";
+    v.querySelector("source").src="media/reel_"+l+".mp4";
+    const wasMuted=v.muted; v.load(); v.muted=wasMuted; v.play().catch(()=>{});
+  }));
+})();
+</script>
+
+</body>
+</html>
