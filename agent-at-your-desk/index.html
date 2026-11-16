@@ -250,7 +250,7 @@ footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:16px;
     <div class="facts"><span>145 pages · PDF + EPUB</span><span class="hi-chip">English + हिंदी</span><span>6 parts · 18 chapters</span><span>57 figures</span><span>3 case studies</span><span>30-day plan</span></div>
     <div class="buyrow">
       <button class="btn" type="button" data-buy>Get the playbook <span aria-hidden="true">→</span></button>
-      <div class="price"><strong data-price>₹499</strong><small>incl. 18% GST · instant download</small></div>
+      <div class="price"><strong data-price>₹499</strong><small>all-inclusive · instant download</small></div>
     </div>
     <p class="notice" data-notice aria-live="polite"></p>
   </div>
@@ -401,13 +401,12 @@ footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:16px;
     </div>
     <div class="bill">
       <table aria-label="Price breakdown">
-        <tr><td>Playbook (PDF)</td><td data-base>₹422.88</td></tr>
-        <tr><td>GST 18%</td><td data-gst>₹76.12</td></tr>
+        <tr><td>Ebook (PDF + EPUB, English + हिंदी)</td><td data-base>₹499</td></tr>
         <tr class="total"><td>Total</td><td data-price>₹499</td></tr>
       </table>
       <button class="btn" type="button" data-buy>Buy now <span aria-hidden="true">→</span></button>
       <p class="notice" data-notice aria-live="polite"></p>
-      <p class="fine">Secure checkout by Razorpay: UPI, cards and netbanking. Price includes GST. Your download opens as soon as payment completes.</p>
+      <p class="fine">Secure checkout by Razorpay: UPI, cards and netbanking. No extra charges at checkout. Your download opens as soon as payment completes.</p>
     </div>
   </div>
 </div></section>
@@ -431,9 +430,9 @@ footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:16px;
 <section id="policies" class="policies" style="padding-top:0"><div class="wrap">
   <p class="label">Store policies</p>
   <div class="pol">
-    <details id="terms"><summary>Terms of sale</summary><p>You are buying a personal, non-transferable licence to one digital copy of The Agent at Your Desk (PDF and EPUB) and its companion files. You may read it on your own devices and print it for personal use. Please don't share, resell or upload the file. Prices are in Indian rupees and include GST.</p></details>
+    <details id="terms"><summary>Terms of sale</summary><p>You are buying a personal, non-transferable licence to one digital copy of The Agent at Your Desk (PDF and EPUB) and its companion files. You may read it on your own devices and print it for personal use. Please don't share, resell or upload the file. Prices are in Indian rupees and are final; no tax is added at checkout.</p></details>
     <details id="refunds"><summary>Refunds and delivery</summary><p>Your download link opens straight after payment. If the download doesn't open or the file won't open, write to us and we'll resend it or refund you in full. Because the book is a digital download, we don't offer refunds once it has been delivered and opened, except for a duplicate payment.</p></details>
-    <details id="privacy"><summary>Privacy</summary><p>We collect your name, email and phone number only to process your order, send the book and issue your GST invoice. Payments are handled by our payment provider; we never see or store your card or UPI details. We don't sell your data. You can ask us to delete your details at any time.</p></details>
+    <details id="privacy"><summary>Privacy</summary><p>We collect your name, email and phone number only to process your order, send the book and email your payment receipt. Payments are handled by our payment provider; we never see or store your card or UPI details. We don't sell your data. You can ask us to delete your details at any time.</p></details>
     <details id="contact"><summary>Contact</summary><p data-contact>Questions about an order? Message <a href="https://www.instagram.com/buildwithashish.ai/" target="_blank" rel="noopener">@buildwithashish.ai</a> on Instagram.</p></details>
   </div>
 </div></section>
@@ -443,8 +442,8 @@ footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:16px;
 
 <script>
 // Edit these when the price and payment link are confirmed.
-const PRICE_INR = 499;          // GST-inclusive
-const GST_RATE = 0.18;
+const PRICE_INR = 499;          // final price, no GST (seller not GST-registered)
+const GST_RATE = 0;
 const CHECKOUT_URL = "";         // e.g. Razorpay Payment Page or Gumroad link
 
 (function(){
